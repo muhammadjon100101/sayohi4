@@ -158,7 +158,7 @@
             }
      
             .menu__box {
-              width: 70%;
+              width: 80%;
               height: 100%;
               background-color: #000;
               position: fixed;
@@ -246,11 +246,7 @@
               }
             }
      
-            @media screen and (max-width:768px) { 
-              .menu__box { 
-                width: 60%;
-              } 
-            }
+           
             @media screen and (max-width:400px) { 
               .menu__box { 
                 width: 100%;

@@ -221,13 +221,12 @@
             margin-top: 30px; 
             display: flex; 
             align-items: center;
-            justify-content: space-between; 
+            justify-content: center; 
                 .auctions_block{
                     width: 500px;
                     background: rgba(255, 255, 255, 0.2);
                     padding: 30px 0;
-                    border-radius: 30px;
-                    margin-left: 20px;
+                    border-radius: 30px; 
                     .auctions-icon{
                         display: flex;
                         justify-content: center;
@@ -353,6 +352,40 @@
                 }
             }
         }
+        @media screen and (max-width:580px){
+           .auctions__container{
+            .auctions_block{  
+                .auctions-person{
+                    width: 90%;
+                    margin: 30px auto;
+                    display: flex;
+                    align-items: center;
+                     
+                    .namePerson{ 
+                        h3{ 
+                            font-size: 20px;  
+                        }
+                        h4{ 
+                            line-height: 20px; 
+                        }
+                    }
+                } 
+                .auctions-btn{ 
+                    flex-direction: column;
+                    .timer_btn{   
+                        width: 100%;
+                        justify-content: center;
+                    } 
+                    .place_btn{  
+                        width: 100%;
+                        margin-left: 0;
+                        margin-top: 20px;
+                    } 
+
+                }
+            } 
+           }
+        }
         @media screen and (max-width:450px){
             .auctions__title{
                 flex-direction: column;
@@ -365,7 +398,10 @@
     }
     .popular__content{
         margin-top: 100px;
-        padding: 0 20px; 
+        padding: 0 20px;
+        max-width: 1200px; 
+        margin:  auto; 
+        margin-top: 150px;
         .popular__title{
             max-width: 1200px; 
             margin: auto;
@@ -399,43 +435,130 @@
                     margin-left: 10px;
                 }
             }
-        }
-        .popular__container{ 
-            margin-top: 30px; 
-            display: flex; 
-            align-items: center;
-            justify-content: space-between; 
-               
-            
-        }
-        @media screen and (max-width:800px){
-            .popular__title{ 
+            @media screen and (max-width:800px){ 
                 h1{
                     font-size: 35px;
-                }
-                
+                }  
             }
-        }
-        @media screen and (max-width:580px){
-            .popular__title{ 
+            @media screen and (max-width:580px){ 
                 h1{
                     font-size: 30px;
                 }
                 .allExplore_btn{ 
                     width: 150px;
-                }
-                
+                } 
             }
+            
+        @media screen and (max-width:480px){ 
+            flex-direction: column;
+            .allExplore_btn{
+                width: 100%;
+                margin-top: 20px;
+            } 
         }
-        @media screen and (max-width:480px){
-            .popular__title{
+        }
+        .popular__container{   
+            margin-top: 30px; 
+            display: flex; 
+            align-items: center;
+            justify-content: space-between;  
+            .popular_block{
+                max-width:380px;
+                background:rgba(255, 255, 255, 0.2); 
+                border-radius:25px;
+                margin-left:20px;
+                padding: 20px;
+                .popular_icon{
+                    display: flex;     
+                    flex-wrap: wrap; 
+                    justify-content: center;
+                    gap:15px;
+                    img{
+                        width: 45%; 
+                        
+                    }
+                }
+                .popular-person{
+                    width: 90%;
+                    margin: 30px auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    img{
+                        width: 50px;
+                    }
+                    .namePerson{
+                        margin-left: 20px;
+                        h3{
+                            font-family: 'Urbanist', sans-serif; 
+                            font-weight: 700;
+                            font-size: 24px; 
+                            color: #FFFFFF;
+                        }
+                        h4{
+                            font-family: 'Urbanist', sans-serif; 
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px; 
+                            color: #8393AF;
+                            span{
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .hearts_block{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        margin-left: 20px;
+                        img{
+                            width: 30px;
+                            height: 30px;
+            
+                        }
+                        h3{
+                            font-family: 'Urbanist',sans-serif;  
+                            font-weight: 400;
+                            font-size: 16px; 
+                            color: #FFFFFF;  
+                        }
+                    }
+                    
+                }
+            }
+            @media screen and (max-width:1150px) {
                 flex-direction: column;
-                .allExplore_btn{
-                    width: 100%;
+                .popular_block{
                     margin-top: 20px;
+                    margin-left: 0;
+                }
+            }
+            @media screen and (max-width:450px) { 
+                .popular_block{
+                    .popular-person{ 
+                        .namePerson{
+                            margin-left: 20px;
+                            h3{ 
+                                font-size: 16px;  
+                            }
+                            h4{ 
+                                font-size: 14px; 
+                            }
+                        }
+                        .hearts_block{ 
+                            h3{ 
+                                font-size: 14px;  
+                            }
+                        }
+                        
+                    }
                 }
             }
         }
+        
+      
+     
     }
 
 }
