@@ -1,4 +1,4 @@
-.container__page{ 
+.container__page{
     margin: 30px auto;
     .discover__content{ 
         max-width: 1200px; 
@@ -396,11 +396,10 @@
             }
         }
     }
-    .popular__content{
-        margin-top: 100px;
+    .popular__content{ 
         padding: 0 20px;
         max-width: 1200px; 
-        margin:  auto; 
+        margin: auto; 
         margin-top: 150px;
         .popular__title{
             max-width: 1200px; 
@@ -555,10 +554,253 @@
                     }
                 }
             }
-        }
-        
-      
-     
+        } 
     }
+    .sellers__content{
+        max-width: 1200px; 
+        padding: 0 20px;
+        margin:150px auto 0;  
+        h1{
+            font-family: 'Urbanist',sans-serif; 
+            font-weight: 700;
+            font-size: 64px; 
+            text-align: center; 
+            color: #FFFFFF;
+        }
+        .sellers__container{ 
+            margin-top: 30px;   
+            // display: grid;
+            // grid-template-columns: repeat(4,2fr);
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center;
+            gap: 20px;
+            .sellers_block{
+                width: 270px;
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 25px;
+                padding: 30px 20px;
+                display: flex;
+                align-items: center;  
+                img{
+                    width: 70px;
+                    height: 70px;
+                }
+                .aboutPerson{
+                    margin-left: 20px;
+                    h2{
+                        font-family: 'Urbanist',sans-serif; 
+                        font-weight: 700;
+                        font-size: 20px; 
+                        color: #FFFFFF;
+                    }
+                    h3{
+                        font-family: 'Urbanist',sans-serif; 
+                        font-weight: 400;
+                        font-size: 16px; 
+                        color: #8393AF;
+                    }
+                    
+                }
+            }
+        }
+        @media screen and  (max-width:600px){
+            h1{
+                font-size: 50px;
+            }                
+        }
+    }
+    .picks__content{
+        margin-top: 100px;
+        padding: 0 20px;  
+        .picks__container{ 
+            margin-top: 30px; 
+            display: flex; 
+            align-items: center;
+            justify-content: center; 
+            flex-wrap: wrap;
+            gap: 20px;
+            .picks_block{
+                width: 370px;
+                background: rgba(255, 255, 255, 0.2);
+                padding: 30px 0;
+                border-radius: 30px; 
+                .picks-icon{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 90%; 
+                    }
+                }
+                .picks-person{
+                    width: 90%;
+                    margin: 30px auto;
+                    display: flex;
+                    align-items: center;
+                    
+                    img{
+                        width: 50px;
+                    }
+                    .namePerson{
+                        margin-left: 20px;
+                        h3{
+                            font-family: 'Urbanist', sans-serif; 
+                            font-weight: 700;
+                            font-size: 24px; 
+                            color: #FFFFFF;
+                        }
+                        h4{
+                            font-family: 'Urbanist', sans-serif; 
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px; 
+                            color: #8393AF;
+                            span{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+                .picks-view{
+                    width: 90%;
+                    margin: 30px auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    .view_block{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        img{
+                            width: 30px;
+                            height: 30px;
 
+                        }
+                        h3{
+                            font-family: 'Urbanist',sans-serif;  
+                            font-weight: 400;
+                            font-size: 16px; 
+                            color: #FFFFFF;  
+                        }
+                    }
+                }
+                .picks-btn{
+                    width: 90%;
+                    margin: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;  
+                    .view_btn{ 
+                        width: 180px; 
+                        padding: 20px 10px;
+                        display: flex;
+                        align-items: center;
+                        background: #3C485D; 
+                        border-radius: 12px; 
+                        cursor: pointer;
+                        &:active{
+                            transform: scale(.96);
+                        }  
+                        h3{
+                            font-family: 'Urbanist', sans-serif; 
+                            font-weight: 700;
+                            font-size: 16px; 
+                            color: #FFFFFF;
+                            margin-left: 10px;
+                            
+                        }
+                    }
+                  
+                    .place_btn{ 
+                        width: 180px;
+                        padding: 20px 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: linear-gradient(207.67deg, #FDAE8F 3.43%, #FD1C68 104.7%);
+                        border-radius: 12px;
+                        cursor: pointer;  
+                        margin-left: 20px;
+                        &:active{
+                            transform: scale(.96);
+                        }
+                        h3{
+                            font-family: 'Urbanist', sans-serif; 
+                            font-weight: 700;
+                            font-size: 16px; 
+                            color: #FFFFFF;
+                            margin-left: 10px;
+    
+                            
+                        }
+                    }
+                  
+
+                }
+            } 
+            
+        }
+        .load__btn{
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+            .loadmore{
+                width: 250px; 
+                padding: 15px 0;
+                background: radial-gradient(#FDAE8F,#FD1C68); 
+                display: flex;
+                align-items: center; 
+                justify-content: center;
+                cursor: pointer; 
+                border-radius: 15px; 
+                &:active{
+                    transform: scale(.96);
+                }
+                h3{
+                    font-family: 'Urbanist', sans-serif; 
+                    font-weight: 700;
+                    font-size: 20px; 
+                    color: #FFFFFF;
+                    margin-left: 10px;
+                }
+            }
+          
+        }
+        @media screen and (max-width:580px){
+           .picks__container{
+            .picks_block{  
+                .picks-person{
+                    width: 90%;
+                    margin: 30px auto;
+                    display: flex;
+                    align-items: center;
+                     
+                    .namePerson{ 
+                        h3{ 
+                            font-size: 20px;  
+                        }
+                        h4{ 
+                            line-height: 20px; 
+                        }
+                    }
+                } 
+                .picks-btn{ 
+                    flex-direction: column;
+                    .view_btn{   
+                        width: 100%;
+                        justify-content: center;
+                    } 
+                    .place_btn{  
+                        width: 100%;
+                        margin-left: 0;
+                        margin-top: 20px;
+                    } 
+
+                }
+            } 
+           }
+        }
+    }
 }

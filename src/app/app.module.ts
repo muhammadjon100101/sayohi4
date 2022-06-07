@@ -6,8 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { ExplorePageComponent } from './explore-page/explore-page.component';  
-import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ExplorePageComponent } from './explore-page/explore-page.component';   
 
 @NgModule({
   declarations: [
@@ -20,8 +19,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    CarouselModule  
+    AppRoutingModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]
