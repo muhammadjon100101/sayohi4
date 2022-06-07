@@ -182,7 +182,7 @@
     }
     .auctions__content{
         margin-top: 100px;
-        padding: 0 20px;
+        padding: 0 20px; 
         .auctions__title{
             max-width: 1200px; 
             margin: auto;
@@ -218,26 +218,130 @@
             }
         }
         .auctions__container{ 
-            margin-top: 30px;
-            .auctions_block{
-                width: 500px;
-                background: rgba(255, 255, 255, 0.2);
-                padding: 30px 0;
-                .auctions-icon{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    img{
-                        width: 90%; 
+            margin-top: 30px; 
+            display: flex; 
+            align-items: center;
+            justify-content: space-between; 
+                .auctions_block{
+                    width: 500px;
+                    background: rgba(255, 255, 255, 0.2);
+                    padding: 30px 0;
+                    border-radius: 30px;
+                    margin-left: 20px;
+                    .auctions-icon{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            width: 90%; 
+                        }
                     }
-                }
-                .auctions-person{
-                    display: flex;
-                    align-items: center;
-                }
-                .auctions-view{}
-                .auctions-btn{}
-            }
+                    .auctions-person{
+                        width: 90%;
+                        margin: 30px auto;
+                        display: flex;
+                        align-items: center;
+                        
+                        img{
+                            width: 50px;
+                        }
+                        .namePerson{
+                            margin-left: 20px;
+                            h3{
+                                font-family: 'Urbanist', sans-serif; 
+                                font-weight: 700;
+                                font-size: 24px; 
+                                color: #FFFFFF;
+                            }
+                            h4{
+                                font-family: 'Urbanist', sans-serif; 
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 24px; 
+                                color: #8393AF;
+                                span{
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                    .auctions-view{
+                        width: 90%;
+                        margin: 30px auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        .view_block{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            img{
+                                width: 30px;
+                                height: 30px;
+
+                            }
+                            h3{
+                                font-family: 'Urbanist',sans-serif;  
+                                font-weight: 400;
+                                font-size: 16px; 
+                                color: #FFFFFF;  
+                            }
+                        }
+                    }
+                    .auctions-btn{
+                        width: 90%;
+                        margin: auto;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;  
+                        .timer_btn{ 
+                            width: 180px; 
+                            padding: 20px 10px;
+                            display: flex;
+                            align-items: center;
+                            background: #3C485D; 
+                            border-radius: 12px; 
+                            cursor: pointer;
+                            &:active{
+                                transform: scale(.96);
+                            }  
+                        }
+                        h3{
+                            font-family: 'Urbanist', sans-serif; 
+                            font-weight: 700;
+                            font-size: 16px; 
+                            color: #FFFFFF;
+                            margin-left: 10px;
+                            
+                        }
+                        .place_btn{ 
+                            width: 250px;
+                            padding: 20px 20px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: linear-gradient(207.67deg, #FDAE8F 3.43%, #FD1C68 104.7%);
+                            border-radius: 12px;
+                            cursor: pointer;  
+                            margin-left: 20px;
+                            &:active{
+                                transform: scale(.96);
+                            }
+                        }
+                        h3{
+                            font-family: 'Urbanist', sans-serif; 
+                            font-weight: 700;
+                            font-size: 16px; 
+                            color: #FFFFFF;
+                            margin-left: 10px;
+
+                            
+                        }
+
+                    }
+                } 
+            
         }
         @media screen and (max-width:650px){
             .auctions__title{ 
@@ -259,4 +363,79 @@
             }
         }
     }
+    .popular__content{
+        margin-top: 100px;
+        padding: 0 20px; 
+        .popular__title{
+            max-width: 1200px; 
+            margin: auto;
+            display: flex;  
+            align-items: center;
+            justify-content: space-between;
+            h1{
+                font-family: 'Urbanist', sans-serif; 
+                font-weight: 700;
+                font-size: 60px; 
+                color: #FFFFFF;
+                
+            }
+            .allExplore_btn{
+                width: 200px; 
+                padding: 15px 0;
+                background: radial-gradient(#FDAE8F,#FD1C68); 
+                display: flex;
+                align-items: center; 
+                justify-content: center;
+                cursor: pointer; 
+                border-radius: 15px; 
+                &:active{
+                    transform: scale(.96);
+                }
+                h2{
+                    font-family: 'Urbanist', sans-serif; 
+                    font-weight: 700;
+                    font-size: 20px; 
+                    color: #FFFFFF;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .popular__container{ 
+            margin-top: 30px; 
+            display: flex; 
+            align-items: center;
+            justify-content: space-between; 
+               
+            
+        }
+        @media screen and (max-width:800px){
+            .popular__title{ 
+                h1{
+                    font-size: 35px;
+                }
+                
+            }
+        }
+        @media screen and (max-width:580px){
+            .popular__title{ 
+                h1{
+                    font-size: 30px;
+                }
+                .allExplore_btn{ 
+                    width: 150px;
+                }
+                
+            }
+        }
+        @media screen and (max-width:480px){
+            .popular__title{
+                flex-direction: column;
+                .allExplore_btn{
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
 }
