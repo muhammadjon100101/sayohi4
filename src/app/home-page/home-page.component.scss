@@ -1,7 +1,8 @@
-.container__page{
-    max-width: 1200px;  
+.container__page{ 
     margin: 30px auto;
-    .discover__content{
+    .discover__content{ 
+        max-width: 1200px; 
+        margin: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -83,9 +84,7 @@
             img{
                 width: 100%; 
             }
-        }
-
-
+        } 
         @media screen and (max-width:965px) {
             flex-direction: column-reverse;
             .discover_text{
@@ -118,6 +117,146 @@
                     }
                 }
             } 
+        }
+    }
+    .collection__content{
+        margin-top: 140px;
+        padding: 0 20px;
+        max-width: 1200px; 
+        margin: auto;
+        h1{
+            font-family: 'Urbanist', sans-serif; 
+            font-weight: 700;
+            font-size: 64px; 
+            color: #FFFFFF;
+            text-align: center;
+        }
+        .collection__container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+
+            .collection_block{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                width: 290px; 
+                padding: 20px 10px;
+                .icon{
+                    display: flex;
+                    justify-content: center; 
+                    img{
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+                h3{
+                    text-align: center;
+                    font-family: 'Urbanist', sans-serif; 
+                    font-weight: 700;
+                    font-size: 24px; 
+                    color: #FFFFFF;
+                    margin-top: 20px;
+                }
+                p{
+                    text-align: center;
+                    font-family: 'Urbanist', sans-serif; 
+                    font-weight: 400;
+                    font-size: 16px; 
+                    color: #FFFFFF;
+                    margin-top: 10px;
+                }
+            }
+            
+        }
+        @media screen and (max-width:650px) {
+            h1{
+                font-size: 40px;
+            }
+            .collection__container{
+                justify-content: center;
+            }
+        }
+    }
+    .auctions__content{
+        margin-top: 100px;
+        padding: 0 20px;
+        .auctions__title{
+            max-width: 1200px; 
+            margin: auto;
+            display: flex;  
+            align-items: center;
+            justify-content: space-between;
+            h1{
+                font-family: 'Urbanist', sans-serif; 
+                font-weight: 700;
+                font-size: 60px; 
+                color: #FFFFFF;
+                
+            }
+            .allExplore_btn{
+                width: 200px; 
+                padding: 15px 0;
+                background: radial-gradient(#FDAE8F,#FD1C68); 
+                display: flex;
+                align-items: center; 
+                justify-content: center;
+                cursor: pointer; 
+                border-radius: 15px; 
+                &:active{
+                    transform: scale(.96);
+                }
+                h2{
+                    font-family: 'Urbanist', sans-serif; 
+                    font-weight: 700;
+                    font-size: 20px; 
+                    color: #FFFFFF;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .auctions__container{ 
+            margin-top: 30px;
+            .auctions_block{
+                width: 500px;
+                background: rgba(255, 255, 255, 0.2);
+                padding: 30px 0;
+                .auctions-icon{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 90%; 
+                    }
+                }
+                .auctions-person{
+                    display: flex;
+                    align-items: center;
+                }
+                .auctions-view{}
+                .auctions-btn{}
+            }
+        }
+        @media screen and (max-width:650px){
+            .auctions__title{ 
+                h1{
+                    font-size: 40px;
+                }
+                .allExplore_btn{
+                    width: 150px;
+                }
+            }
+        }
+        @media screen and (max-width:450px){
+            .auctions__title{
+                flex-direction: column;
+                .allExplore_btn{
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
         }
     }
 }

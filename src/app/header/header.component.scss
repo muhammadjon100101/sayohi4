@@ -4,7 +4,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px ;
+        padding: 20px;
         margin: auto;
         .header_logo{
             display: flex;
@@ -82,13 +82,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            display: none;
           .menu__block { 
             height: inherit;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;    
-            visibility: hidden;
+            
             #menu__toggle {
               position: absolute;
               opacity: 0;
@@ -245,8 +246,7 @@
               }
             }
      
-            @media screen and (max-width:768px) {
-                visibility: visible; 
+            @media screen and (max-width:768px) { 
               .menu__box { 
                 width: 60%;
               } 
@@ -258,6 +258,9 @@
             }
       
           }  
+          @media screen and (max-width:768px) { 
+            display: block;
+          }
         }
         @media screen and (max-width:970px) {
             .header_search{
