@@ -1,0 +1,123 @@
+.container__page{
+    max-width: 1200px;  
+    margin: 30px auto;
+    .discover__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        .discover_text{
+            width: 40%;
+            .discover-title{
+                h1{
+                    font-family: 'Urbanist',sans-serif; 
+                    font-weight: 700;
+                    font-size: 48px; 
+                    color: #FFFFFF;
+                    span{
+                        color: #FD1C68;
+                    }
+                }
+                p{
+                    font-family: 'Urbanist' ,sans-serif; 
+                    font-weight: 400;
+                    font-size: 20px; 
+                    color: #FFFFFF;
+                    margin-top: 40px;
+                    
+                }
+            }
+            .discover-btn{
+                display: flex;
+                justify-content: flex-start;
+                align-content: center;
+                margin-top: 40px;
+                .explore_btn{ 
+                    width: 200px;
+                    background: radial-gradient(#FDAE8F,#FD1C68); 
+                    display: flex;
+                    align-items: center;
+                    padding: 15px 40px;
+                    cursor: pointer; 
+                    border-radius: 15px;
+                   
+                    &:active{
+                        transform: scale(.96);
+                    }
+                    h2{
+                        font-family: 'Urbanist', sans-serif; 
+                        font-weight: 700;
+                        font-size: 20px; 
+                        color: #FFFFFF;
+                        margin-left: 10px;
+                    }
+                }
+                .create_btn{ 
+                    width: 200px;  
+                    display: flex;
+                    align-items: center;
+                    padding: 15px 40px;  
+                    cursor: pointer; 
+                    border-radius: 15px; 
+                    margin-left: 30px;
+                    border: 1px solid #ccc;
+                    &:active{
+                        transform: scale(.96);
+                    }
+                    .fa{
+                        color: #fff;
+                        font-size: 20px;
+                    }
+                    h2{
+                        font-family: 'Urbanist', sans-serif; 
+                        font-weight: 700;
+                        font-size: 20px; 
+                        color: #FFFFFF;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .discover_image{
+            width: 60%;
+            img{
+                width: 100%; 
+            }
+        }
+
+
+        @media screen and (max-width:965px) {
+            flex-direction: column-reverse;
+            .discover_text{
+                width: 100%;
+                .discover-title{
+                    h1{
+                        font-size: 35px;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .discover_image{
+                width: 60%;
+            }
+        }
+        @media screen and (max-width:500px) { 
+            .discover_text{ 
+                .discover-btn{ 
+                    flex-direction: column;
+                    .explore_btn{ 
+                        width: 100%;
+                        
+                    }
+                    .create_btn{   
+                        width: 100%;
+                        margin-left: 0;
+                        margin-top: 20px;   
+                    }
+                }
+            } 
+        }
+    }
+}
