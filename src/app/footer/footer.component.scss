@@ -1,0 +1,192 @@
+.footer{
+    .footer__container{
+        max-width: 1200px;
+        margin: auto; 
+        padding: 30px;
+        display: flex; 
+        justify-content: space-between;
+        .footer_adress{
+            width: 40%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            .footer-logo{
+                display: flex;
+                align-items: center;
+                h1{
+                    font-family: 'Urbanist', sans-serif; 
+                    font-weight: 700;
+                    font-size: 32px; 
+                    color: #FFFFFF;
+                    margin-left: 10px;
+                }
+            }
+            .footer-text{
+                font-family: 'Urbanist', sans-serif; 
+                font-weight: 700;
+                font-size: 16px; 
+                color: #8393AF;
+                margin-top: 20px;
+            }
+            .footer-personality{
+                .person_block{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 30px; 
+                    img{
+                        width: 50px;
+                    }
+                    .myPhone{
+                        margin-left: 20px;
+                        h2{
+                            font-family: 'Urbanist', sans-serif; 
+                            font-weight: 400;
+                            font-size: 14px; 
+                            color: #8393AF;
+                            margin-bottom: 5px;
+                        }
+                        span{
+                            font-family: 'Urbanist', sans-serif; 
+                            font-weight: 400;
+                            font-size: 20px; 
+                            color: #fff;   
+                        }
+                    }
+                } 
+            }
+        }
+        .footer_about{
+            width: 50%;
+            .footer-support{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .support_block{
+                    display: flex;
+                    flex-direction: column;
+                    h1{
+                        font-family: 'Urbanist', sans-serif; 
+                        font-weight: 400;
+                        font-size: 20px; 
+                        color: #FFFFFF;
+                        
+                    }
+                    h2{
+                        font-family: 'Urbanist', sans-serif; 
+                        font-weight: 700;
+                        font-size: 16px; 
+                        color: #8393AF;
+                        margin-top: 20px;
+                        cursor: pointer;
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                }  
+            }
+            .footer-subtitle{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 70px;
+                .subtitle_icons{
+                    img{
+                        &:not(:first-child){
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .subtitle_text{ 
+                    font-family: 'Urbanist', sans-serif; 
+                    font-weight: 700;
+                    font-size: 14px; 
+                    color: #8393AF;
+                }   
+            }
+        }
+        @media screen and (max-width:900px) {
+            flex-direction: column;
+            .footer_adress{
+                width: 100%;
+                .footer-text{
+                    width: 70%;
+                }
+            }
+            .footer_about{
+                width: 100%;
+                margin-top: 80px; 
+            }
+        }
+        @media screen and (max-width:500px) { 
+            padding: 20px;
+            .footer_adress{ 
+                .footer-text{
+                    width: 100%;
+                }
+            } 
+            .footer_about{ 
+                .footer-subtitle{ 
+                    .subtitle_icons{
+                        img{
+                            width: 35px;
+                        }
+                    } 
+                }
+            }
+        }
+        @media screen and (max-width:400px) {  
+            .footer_adress{ 
+                .footer-logo{ 
+                    h1{ 
+                        font-size: 25px;  
+                    }
+                } 
+                .footer-personality{
+                    .person_block{ 
+                        img{
+                            width: 35px;
+                        }
+                        .myPhone{
+                            margin-left: 10px;
+                            h2{ 
+                                font-size: 14px;  
+                            }
+                            span{ 
+                                font-size: 16px;  
+                            }
+                        }
+                    } 
+                }
+            }
+            .footer_about{
+                .footer-support{ 
+                    flex-direction: column;
+                    .support_block{ 
+                        h1{ 
+                            text-align: center;
+                            margin-top: 50px;
+                            font-size: 25px;
+                        }
+                        h2{ 
+                            text-align: center;
+                            font-size: 20px;
+                        }
+                    }  
+                } 
+                .footer-subtitle{  
+                    flex-direction: column;
+                    .subtitle_icons{
+                        display: flex;justify-content: space-around;
+                        width: 80%;
+                        img{
+                            width: 50px;
+                        }
+                    }
+                    .subtitle_text{
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
