@@ -47,6 +47,9 @@
         .header_menu{
             display: flex;
             align-items: center;
+            .active{
+              color: red;
+            }
             h1{
                 margin-left: 20px;
                 font-family: 'Urbanist', sans-serif; 
