@@ -19,12 +19,14 @@
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
     "angular-bootstrap": "^0.12.2",
+    "core-js": "^3.22.8",
     "jquery": "^3.6.0",
     "ngx-owl-carousel-o": "^7.0.2",
     "ngx-slick-carousel": "^0.6.0",
     "rxjs": "~7.5.0",
     "slick-carousel": "^1.8.1",
     "tslib": "^2.4.0",
+    "zone": "^0.3.4",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
