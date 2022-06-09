@@ -8,20 +8,32 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class HomePageComponent implements OnInit {
 
-  picksBlock:any = [
-    {id:1,img:'./assets/img/person2.svg',avatar:'./assets/img/avatarPerson.svg',name:'Muhammadjon',byName:'Firus'}, 
-    {id:1,img:'./assets/img/person2.svg',avatar:'./assets/img/avatarPerson.svg',name:'Mustafojon',byName:'Farhod'}, 
-    {id:1,img:'./assets/img/person2.svg',avatar:'./assets/img/avatarPerson.svg',name:'Ahmad',byName:'Abdurahmon'}, 
-    {id:1,img:'./assets/img/person2.svg',avatar:'./assets/img/avatarPerson.svg',name:'Umar',byName:'Okil'}, 
-    {id:1,img:'./assets/img/person2.svg',avatar:'./assets/img/avatarPerson.svg',name:'Usmon',byName:'Mansur'}, 
-    {id:1,img:'./assets/img/person2.svg',avatar:'./assets/img/avatarPerson.svg',name:'Ali',byName:'Romiz'}, 
-  ]
-
-
   constructor() { }
 
   ngOnInit(): void {
   }
-  
-
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: true,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      740: {
+        items: 3
+      },
+      940: {
+        items: 4
+      }
+    },
+    nav: true
+  }
 }

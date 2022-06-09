@@ -75,7 +75,8 @@
       </div>
     </div>
 
-     <div class="auctions__container" >  
+     <div class="auctions__container" > 
+        <div class="auction_slider">
           <div class="auctions_block">
             <div class="auctions-icon">
               <img src="./assets/img/person.svg" alt="" />
@@ -183,7 +184,8 @@
                 <h3>Place Bid</h3>
               </div>
             </div>
-          </div>   
+          </div>    
+        </div>  
      </div>
   </div>
   <div class="popular__content">
@@ -320,16 +322,16 @@
   </div>
   <div class="picks__content">
     <h1>Today’s Picks</h1>
-    <div class="picks__container" >
-      <div class="picks_block" *ngFor="let picks of picksBlock">
+    <div class="picks__container">
+      <div class="picks_block">
         <div class="picks-icon">
-          <img [src]="picks.img" alt="" />
+          <img src="./assets/img/person.svg" alt="" />
         </div>
         <div class="picks-person">
-          <img [src]="picks.avatar" alt="" />
+          <img src="./assets/img/avatarPerson.svg" alt="" />
           <div class="namePerson">
-            <h3>{{picks.name}}</h3>
-            <h4>Created by <span>{{picks.byName}}</span></h4>
+            <h3>Metaverse</h3>
+            <h4>Created by <span>John Doe</span></h4>
           </div>
         </div>
         <div class="picks-view">
@@ -353,7 +355,166 @@
           </div>
         </div>
       </div>
-      
+      <div class="picks_block">
+        <div class="picks-icon">
+          <img src="./assets/img/person.svg" alt="" />
+        </div>
+        <div class="picks-person">
+          <img src="./assets/img/avatarPerson.svg" alt="" />
+          <div class="namePerson">
+            <h3>Metaverse</h3>
+            <h4>Created by <span>John Doe</span></h4>
+          </div>
+        </div>
+        <div class="picks-view">
+          <div class="view_block">
+            <img src="./assets/img/icons/hearts.svg" alt="" />
+            <h3>372</h3>
+          </div>
+          <div class="view_block">
+            <img src="./assets/img/icons/ellips.svg" alt="" />
+            <h3>5.00ETH</h3>
+          </div>
+        </div>
+        <div class="picks-btn">
+          <div class="view_btn">
+            <img src="./assets/img/icons/view.svg" alt="" />
+            <h3>View History</h3>
+          </div>
+          <div class="place_btn">
+            <img src="./assets/img/icons/award.svg" alt="" />
+            <h3>Place Bid</h3>
+          </div>
+        </div>
+      </div>
+      <div class="picks_block">
+        <div class="picks-icon">
+          <img src="./assets/img/person.svg" alt="" />
+        </div>
+        <div class="picks-person">
+          <img src="./assets/img/avatarPerson.svg" alt="" />
+          <div class="namePerson">
+            <h3>Metaverse</h3>
+            <h4>Created by <span>John Doe</span></h4>
+          </div>
+        </div>
+        <div class="picks-view">
+          <div class="view_block">
+            <img src="./assets/img/icons/hearts.svg" alt="" />
+            <h3>372</h3>
+          </div>
+          <div class="view_block">
+            <img src="./assets/img/icons/ellips.svg" alt="" />
+            <h3>5.00ETH</h3>
+          </div>
+        </div>
+        <div class="picks-btn">
+          <div class="view_btn">
+            <img src="./assets/img/icons/view.svg" alt="" />
+            <h3>View History</h3>
+          </div>
+          <div class="place_btn">
+            <img src="./assets/img/icons/award.svg" alt="" />
+            <h3>Place Bid</h3>
+          </div>
+        </div>
+      </div>
+      <div class="picks_block">
+        <div class="picks-icon">
+          <img src="./assets/img/person.svg" alt="" />
+        </div>
+        <div class="picks-person">
+          <img src="./assets/img/avatarPerson.svg" alt="" />
+          <div class="namePerson">
+            <h3>Metaverse</h3>
+            <h4>Created by <span>John Doe</span></h4>
+          </div>
+        </div>
+        <div class="picks-view">
+          <div class="view_block">
+            <img src="./assets/img/icons/hearts.svg" alt="" />
+            <h3>372</h3>
+          </div>
+          <div class="view_block">
+            <img src="./assets/img/icons/ellips.svg" alt="" />
+            <h3>5.00ETH</h3>
+          </div>
+        </div>
+        <div class="picks-btn">
+          <div class="view_btn">
+            <img src="./assets/img/icons/view.svg" alt="" />
+            <h3>View History</h3>
+          </div>
+          <div class="place_btn">
+            <img src="./assets/img/icons/award.svg" alt="" />
+            <h3>Place Bid</h3>
+          </div>
+        </div>
+      </div>
+      <div class="picks_block">
+        <div class="picks-icon">
+          <img src="./assets/img/person.svg" alt="" />
+        </div>
+        <div class="picks-person">
+          <img src="./assets/img/avatarPerson.svg" alt="" />
+          <div class="namePerson">
+            <h3>Metaverse</h3>
+            <h4>Created by <span>John Doe</span></h4>
+          </div>
+        </div>
+        <div class="picks-view">
+          <div class="view_block">
+            <img src="./assets/img/icons/hearts.svg" alt="" />
+            <h3>372</h3>
+          </div>
+          <div class="view_block">
+            <img src="./assets/img/icons/ellips.svg" alt="" />
+            <h3>5.00ETH</h3>
+          </div>
+        </div>
+        <div class="picks-btn">
+          <div class="view_btn">
+            <img src="./assets/img/icons/view.svg" alt="" />
+            <h3>View History</h3>
+          </div>
+          <div class="place_btn">
+            <img src="./assets/img/icons/award.svg" alt="" />
+            <h3>Place Bid</h3>
+          </div>
+        </div>
+      </div>
+      <div class="picks_block">
+        <div class="picks-icon">
+          <img src="./assets/img/person.svg" alt="" />
+        </div>
+        <div class="picks-person">
+          <img src="./assets/img/avatarPerson.svg" alt="" />
+          <div class="namePerson">
+            <h3>Metaverse</h3>
+            <h4>Created by <span>John Doe</span></h4>
+          </div>
+        </div>
+        <div class="picks-view">
+          <div class="view_block">
+            <img src="./assets/img/icons/hearts.svg" alt="" />
+            <h3>372</h3>
+          </div>
+          <div class="view_block">
+            <img src="./assets/img/icons/ellips.svg" alt="" />
+            <h3>5.00ETH</h3>
+          </div>
+        </div>
+        <div class="picks-btn">
+          <div class="view_btn">
+            <img src="./assets/img/icons/view.svg" alt="" />
+            <h3>View History</h3>
+          </div>
+          <div class="place_btn">
+            <img src="./assets/img/icons/award.svg" alt="" />
+            <h3>Place Bid</h3>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="load__btn">
       <div class="loadmore" routerLink="/explore">

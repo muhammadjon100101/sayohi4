@@ -9,9 +9,9 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ExplorePageComponent } from './explore-page/explore-page.component'; 
 import { PagesComponent } from './pages/pages.component';
 import { ContactComponent } from './contact/contact.component';  
+import { CarouselModule } from 'ngx-owl-carousel-o'; 
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'; 
-import { CarouselModule } from 'ngx-owl-carousel-o'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,9 +26,9 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     BrowserModule,
     AppRoutingModule,  
     BrowserAnimationsModule,
-    FormsModule,
-    HttpClientModule,
     CarouselModule,  
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
